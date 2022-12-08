@@ -10,6 +10,8 @@ gem 'pg'
 
 gem 'rubocop'
 
+gem 'rexml'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
