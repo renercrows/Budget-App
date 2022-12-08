@@ -1,0 +1,27 @@
+<% if current_user %>
+  <div class="container-fluid d-flex flex-column align-items-center">
+    <% unless @groups.empty? %>
+      <% @groups.each do |group| %>
+        <div class="card mt-2 mb-1" style="width: 95%;">
+          <div class="card-body d-flex">
+            <div>
+              <img src=<%= group.icon %> class="category-icon me-2" alt="category icon">
+            </div>
+            <div class="w-75 d-flex justify-content-between align-items-center mx-2">
+              <div class="d-flex flex-column justify-content-center">
+                <%= link_to "#{group.name}", group_path(group.id), class:"card-title category-name fs-5 stretched-link" %>
+                <p class="card-text mt-2"><small class="text-muted"><%=group.created_at.strftime("%d %b %Y")%></small></p>
+              </div>
+              <p class="card-text fw-semibold">$<%= group.entities.sum(:amount) %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <h3 class="mt-4">Add a category.</h2>
+    <% end %>
+    <%= link_to 'Add a new category', new_group_path, class: "btn btn-info text-white mt-5 py-2 px-5 fs-5" %>
+  </div>
+<% else %>
+  <%= render partial: "shared/main" %>
+<% end %> 

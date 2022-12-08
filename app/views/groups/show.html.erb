@@ -1,0 +1,30 @@
+<div class="container-fluid d-flex flex-column align-items-center">
+  <div class="card" style="width: 95%;">
+    <div class="card-header">
+      <div class="d-flex align-items-center">
+        <img src=<%= @group.icon %> class="category-icon me-4" alt="category icon">
+        <h5 class="card-title category-name fs-5 stretched-link"><%=@group.name%>'s transactions</h5>
+      </div>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex justify-content-between bg-light">
+        <p class="m-1 gray-text fs-5">TOTAL PAYMENT</p>
+        <p class="fw-semibold m-1 gray-text fs-5">$<%= @group.entities.sum(:amount) %></p>
+      </li>
+      <% unless @entities.empty? %>
+        <% @entities.each_with_index do |ent, ind| %>
+          <li class="list-group-item">
+            <div d-flex flex-column>
+              <p class="card-text gray-text">Transaction ID-<%=ind + 1%>: <span class="fw-semibold ms-2"><%=ent.name%></span></p>
+              <p class="card-text gray-text">Amount: <span class="fw-semibold ms-2">$<%=ent.amount%></span></p>
+              <p class="card-text mt-2"><small class="text-muted"><i class="fa-regular fa-calendar me-2"></i><%=ent.created_at.strftime("%d %b %Y")%> at <%=ent.created_at.strftime("%I.%M %p")%></small></p>
+            </div>
+          </li>
+        <% end %>
+      <% else %>
+        <li class="list-group-item gray-text">You don't have transactions here yet.</li>
+      <% end %>
+    </ul>
+  </div>
+  <%= link_to 'Add a new transaction', new_entity_path, class: "btn btn-outline-info text-black my-5 py-2 px-5 fs-6" %>
+</div>

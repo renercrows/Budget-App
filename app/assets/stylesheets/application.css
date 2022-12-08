@@ -1,0 +1,28 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, sans-serif;
+  background: lightblue;
+}
+
+.background-screen {
+  height: 100vh;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(235, 235, 235);
+  font-size: 22px;
+}
+
+.category-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.category-name {
+  color: rgb(91, 98, 105);
+  text-decoration: none;
+}
