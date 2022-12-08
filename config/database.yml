@@ -82,4 +82,5 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+  secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
 
