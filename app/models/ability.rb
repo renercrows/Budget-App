@@ -30,7 +30,7 @@ class Ability
     return unless user.present?
 
     can :read, :all
-    can :manage, Groups, user: user
-    can :mange, Entities, user:
+    can :manage, Entities, user: user
+    can :mange, Groups, user:
   end
 end
