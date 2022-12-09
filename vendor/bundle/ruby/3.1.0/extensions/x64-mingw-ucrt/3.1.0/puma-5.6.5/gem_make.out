@@ -1,0 +1,24 @@
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+C:/Ruby31-x64/bin/ruby.exe -I C:/Ruby31-x64/lib/ruby/3.1.0 -r ./siteconf20221208-13676-v38hmh.rb extconf.rb
+checking for whether -fstack-protector-strong -D_FORTIFY_SOURCE=2 is accepted as CFLAGS... yes
+checking for whether -fstack-protector-strong -l:libssp.a is accepted as LDFLAGS... yes
+checking for -lssp... yes
+checking for BIO_read() in -lcrypto... no
+checking for BIO_read() in -llibeay32... no
+** Puma will be compiled without SSL support
+creating Makefile
+
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+make DESTDIR\= clean
+
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+make DESTDIR\=
+generating puma_http11-x64-mingw-ucrt.def
+compiling http11_parser.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20221208-13676-weyyi8/puma

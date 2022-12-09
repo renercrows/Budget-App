@@ -1,0 +1,16 @@
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+C:/Ruby31-x64/bin/ruby.exe -I C:/Ruby31-x64/lib/ruby/3.1.0 -r ./siteconf20221208-13676-yhuav0.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\=
+generating bootsnap-x64-mingw-ucrt.def
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20221208-13676-kuqt2y/bootsnap

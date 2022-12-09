@@ -282,6 +282,7 @@ DEPENDENCIES
   jbuilder
   pg
   puma (~> 5.0)
+  rack
   rails (~> 7.0.4)
   rails-controller-testing
   rexml (~> 3.2, >= 3.2.5)
