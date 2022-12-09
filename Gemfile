@@ -6,7 +6,7 @@ ruby '3.1.2'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch:
 gem 'rails', '~> 7.0.4'
 
-gem 'pg'
+gem 'pg', '~> 1.1'
 
 gem 'rubocop'
 
@@ -16,9 +16,6 @@ gem 'rexml', '~> 3.2', '>= 3.2.5'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
