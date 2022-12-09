@@ -1,0 +1,13 @@
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+C:/Ruby31-x64/bin/ruby.exe -I C:/Ruby31-x64/lib/ruby/3.1.0 -r ./siteconf20221209-10880-wi4rsv.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\= clean
+
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\=
+make: Nothing to be done for 'all'.
+
+current directory: C:/Users/maxiu/OneDrive/Desktop/Budget-App/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\= install
