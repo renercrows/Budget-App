@@ -1,4 +1,4 @@
-database:
+databases:
   - name: Budget-App
     ipAllowList: []
 
