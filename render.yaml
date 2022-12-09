@@ -4,6 +4,7 @@ databases:
 
 services:
   - type: web
+    plan: free
     name: rails
     env: ruby
     buildCommand: "/.bin/render-build.sh"
@@ -15,8 +16,3 @@ services:
         fromDatabase:
           name: Budget-App
           property: connectionString
-  - type: redis
-    name: redis
-    ipAllowList: []
-    plan: free
-    maxmemoryPolicy: noeviction
