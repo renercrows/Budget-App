@@ -21,6 +21,10 @@
 
 - **PostgreSQL:** 
 
+## Live Server
+
+https://budget-app-4o4p.onrender.com/
+
 ## Entity Relationship Diagram 
 
 ![image](https://user-images.githubusercontent.com/98361289/206518607-3e6f4714-4b5d-4494-832b-8c8ae3565009.png)
