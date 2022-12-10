@@ -144,7 +144,7 @@ Clone this repository to your desired folder:
 
 ```sh
   git clone git@github.com:renercrows/Budget-App.git
-  cd Budget-app
+  cd Budget-App
 ```
 
 
