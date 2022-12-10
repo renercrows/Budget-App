@@ -1,0 +1,18 @@
+databases:
+  - name: Budget-App
+    ipAllowList: []
+
+services:
+  - type: web
+    plan: free
+    name: rails
+    env: ruby
+    buildCommand: "/.bin/render-build.sh"
+    startCommand: bundle exec rails s
+    envVars:
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: Budget-App
+          property: connectionString

@@ -1,0 +1,29 @@
+<div class="collapse primary-color text-white" id="navbarToggleExternalContent">
+  <div class="collapse navbar-collapse d-flex flex-column align-items-center">
+    <h1 class="navbar-brand fs-3 fw-semibold mt-4 mb-3">Budget Application</h1>
+    <ul class="navbar-nav d-flex flex-column align-items-center me-auto mb-2 mb-lg-0 w-100">
+      <li class="nav-item">
+        <%= link_to "Categories", root_path, class: "nav-link active fs-6" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "New Categories", new_group_path, class: "nav-link active fs-6" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "New Transaction", new_entity_path, class: "nav-link active fs-6" %>
+      </li>
+    </ul>
+    <%= link_to "Sign Out", destroy_user_session_path, 'data-turbo-method': :delete, class: "btn btn-danger my-2" %>
+  </div>
+</div>
+<nav class="navbar navbar-dark primary-color mb-4">
+  <div class="container-fluid d-flex justify-content-between">
+    <button class="menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class=text-black><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </button>
+    <h3 class="mt-2">
+      <% if controller.controller_name == 'groups' && controller.action_name != 'show' %> Categories <% end %>
+      <% if (controller.controller_name == 'groups' && controller.action_name == 'show') || controller.controller_name == 'entity' %> Transactions <% end %>
+    </h3>
+    <%= link_to '<i class=" fa fa-arrow-left"></i>'.html_safe, :back, class: " btn btn-alert"%>
+  </div>
+</nav>
