@@ -1,100 +1,292 @@
-![Microverse](https://img.shields.io/badge/-Microverse-%20%236f23ff?style=for-the-badge) 
+<a name="readme-top"></a>
 
-![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white) 
-![Rails](https://camo.githubusercontent.com/2f7aa65a22dedd331620c426fd36d88c01600b2c8ed750c41cc72b4d86364937/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7261696c732d2532334343303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d727562792d6f6e2d7261696c73266c6f676f436f6c6f723d7768697465)
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-# Budget-App
+Modify this file to match your project and remove sections that don't apply.
 
-> The Budgett App keeps track of all your categories, and prices. You will be able to save categories, and keep track the finances of those. 
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-## Built With :hammer_and_wrench: 
+After you're finished please remove all the comments and instructions!
+-->
 
-- **Ruby:** 
+<div align="center">
 
-- **Rails:** 
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-- **Bootstrap:** 
+  <h3><b>Microverse README Template</b></h3>
 
-- **GitHub flow:**  
+</div>
 
-- **Linters Check (Rubocop):** 
+<!-- TABLE OF CONTENTS -->
 
-- **PostgreSQL:** 
+# 📗 Table of Contents
 
-## Entity Relationship Diagram 
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Author](#author)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-![image](https://user-images.githubusercontent.com/98361289/206518607-3e6f4714-4b5d-4494-832b-8c8ae3565009.png)
+<!-- PROJECT DESCRIPTION -->
 
-## Getting Started ➡️
+# 📖 [Budget-App] <a name="about-project"></a>
 
-To get a local copy up and running follow these simple steps.:arrow_down:
+> This is a Ruby on Rails app that allows user to create, and list payements grouped by related categories that spent on.
 
-### Prerequisites ✅
-- A code editor like Visual Studio Code with Git and Ruby.
-- You can check if Git is installed by running the following command in the terminal: 
+**[Budget-App]** is a tracking your spending is often the first step in getting your finances in order. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going and areas where you can cut back.
 
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Ruby On Rails</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> what you spend money on and how much you spend, you can see exactly where your cash is going and areas where you can cut back.
+
+- **[Track your expenses]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://budget-app-4o4p.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to work on this project, you need to have the following dependencies installed:
+
+<ul>
+  <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+  <li><a href="https://www.postgresql.org/">Postgresql</a></li>
+  <li><a href="https://nodejs.org/en/">Node.js</a></li>
+  <li><a href="https://yarnpkg.com/">yarn</a></li>
+  <li><a href="https://rubyonrails.org/">Rails</a></li>
+</ul>
+
+<!--
+Example command:
+
+```sh
+ gem install rails
 ```
-$ git --version
-```
-
-Likewise for Ruby installation.
-
-```
-$ ruby --version
-``` 
+ -->
 
 ### Setup
 
-1. Clone the GitHub repository using the  this link 
-```
-  $ git clone https://github.com/renercrows/Budget_App.git
-```
-2. Checkout to the branch
-```
-$ git checkout dev
-```
-3. Run in your terminal to install all gems required to run the app.
-```
-$ bundle install
-``` 
-4. Go to your terminal and run the app with the following command:
-```
-$ rails server
-```
-5. Run in your terminal to create the database. 
-```
-$ reals db:create
+Clone this repository to your desired folder:
 
-6. Run in your terminal to run migrations.
+
+```sh
+  git clone git@github.com:renercrows/Budget-App.git
+  cd Budget-App
 ```
-$ rails db:migration
 
-- **Navigate:** to http://localhost:3000/ 
 
-## Author :writing_hand:
+### Commands to run
 
-:man_technologist:  **Maximiliano Ungredda** :writing_hand: 
+To get all the gems required for the project:
+
+
+```
+  bundle install
+```
+
+To install packages such as style linters:
+
+
+```
+  npm install
+```
+
+To check linters locally, use:
+
+```
+rubocop
+
+npx stylelint "**/*.{css,scss}"
+
+```
+
+Once you have the project correctly set up, run:
+
+To run all migrations, create the database for testing and for development, and insert some data into the database for you to visualize the changes:
+```
+bin/rails db:setup
+```
+
+Finally, each time you make changes to the project, run
+
+In the root folder to check the consistency of the app. Please don't make changes to the tests unless completely necessary, and mention it in your PR description:
+
+```
+bundle exec rspec /spec
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+
+```
+  rails server
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Author <a name="Maximiliano Ungredda"></a>
+
+> Mention all of the collaborators of this project.
+
+👤 **Maximiliano Ungredda**
 
 - GitHub: @renercrows
 - Twitter: @renercrows
-- LinkedIn: (www.linkedin.com/in/maximiliano-ungredda)  
+- LinkedIn: (www.linkedin.com/in/maximiliano-ungredda)
 
-## 🤝 Contributing
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[new_feature_1]**
+- [ ] **[new_feature_2]**
+- [ ] **[new_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- SUPPORT -->
 
-## Acknowledgments
-- [Microverse](https://www.microverse.org/)
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+## ⭐️ Show your support <a name="support"></a>
 
-## 📝 License
+> Write a message to encourage readers to support your project
 
-This project is [MIT] licensed.
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+
+I would like to thank...
+
+- Original Design by: [Gregoire Vella](https://www.behance.net/gregoirevella)
+
+- Microverse
+
+- LazyCoders
+
+- Coding Partners
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
